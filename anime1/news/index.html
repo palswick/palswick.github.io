@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+         
+        $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+        $('.scrollup').fadeIn();
+        } else {
+        $('.scrollup').fadeOut();
+        }
+        });
+         
+        $('.scrollup').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+        });
+         
+        });
+        </script>
+</head>
+
+<body>
+    <header class="header flex-w just-sb align-c">
+        <a class="header-logo" href="../index.html">
+            <img src="../img/logo.svg">
+        </a>
+        <div class="header-r flex-w align-c">
+            <nav class="header-nav flex-w align-c">
+                <a href="../news/index.html" class="header-item">Новости</a>
+                <a href="" class="header-item">Биография</a>
+                <a href="../shop/index.html" class="header-item">Магазин</a>
+                <a href="../watch/index.html" class="header-item">Смотреть</a>
+                <a href="../contacts/index.html" class="header-item">Контакты</a>
+            </nav>
+            <div class="profile">
+                <img src="../img/profile.svg" class="profile-ava">
+                <img src="../img/arrow-p.svg" class="profile-arrow">
+            </div>
+        </div>
+        <div class="header-menu" onClick="openMenu()">
+            <img src="../img/menu.svg">
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="cont">
+            <div class="news-top">
+                <h1 class="news-title">Новости аниме и сайта</h1>
+                <form class="search-form">
+                    <input type="text" placeholder="Поиск" class="search-input">
+                    <button class="search-btnv">
+                        <img src="../img/search.png">
+                    </button>
+                    <img src="../img/more-tabs.svg" onclick="showHideTabs()" class="tabs-mobile">
+                </form>
+            </div>
+            <div class="news-tabs">
+                <div class="newTab-element active" data-type="all">ВСЕ</div>
+                <div class="newTab-element" data-type="site">НОВОСТИ САЙТА</div>
+                <div class="newTab-element" data-type="anime">НОВОСТИ АНИМЕ</div>
+                <div class="newTab-element" data-type="art">СТАТЬИ</div>
+            </div>
+            <div class="news-list">
+                <div href="" class="news-element" data-type="art">
+                    <a href="" class="new-title">Семь универсальных сюжетов ч.2</a>
+                    <div class="new-about">
+                        <div class="new-type article-type">статья</div>
+                        <div class="new-date">
+                            <img src="../img/clock.svg">
+                            <p>7 Мая 2021</p>
+                        </div>
+                    </div>
+                    <p class="new-excerpt">ЭпиграфСюжет – это скелет любого повествовательного вида творчества. Повествование может быть как простым, так и сложным (об этом позже), но сама история имеет в обязательном порядке как минимум две вещи: сюжет и персонажей. В любом
+                        другом случае это уже нельзя назвать вменяемым ...</p>
+                    <p class="new-author">Автор: DreamEvil</p>
+                </div>
+
+                <div href="" class="news-element" data-type="art">
+                    <a href="" class="new-title">Семь универсальных сюжетов ч.1</a>
+                    <div class="new-about">
+                        <div class="new-type article-type">статья</div>
+                        <div class="new-date">
+                            <img src="../img/clock.svg">
+                            <p>1 Мая 2021</p>
+                        </div>
+                    </div>
+                    <p class="new-excerpt">Семь типов сюжета. Какие ассоциации у вас вызывает слово «сюжет»? В мыслях может всплыть воспоминание о недавно просмотренном и впечатлившем вас фильме. Хорошая история из любимой книги. На ум приходит определение из области литературоведения:
+                        череда связанных (прямо или косвенно) событий, через котор ...</p>
+                    <p class="new-author">Автор: DreamEvil</p>
+                </div>
+
+                <div href="" class="news-element" data-type="art">
+                    <a href="" class="new-title">Студия “Ghibli”</a>
+                    <div class="new-about">
+                        <div class="new-type article-type">статья</div>
+                        <div class="new-date">
+                            <img src="../img/clock.svg">
+                            <p>27 Апр 2021</p>
+                        </div>
+                    </div>
+                    <p class="new-excerpt">Название «Ghibli» студии дал основатель - Хаяо Миядзаки. На выбор повлиял его интерес к авиации, в частности самолёт «Caproni Ca.309 Ghibli» итальянского производства. Слово «Ghibli» ливийского происхождения, и означает ветер Сирокко,
+                        дующий с юго-востока...</p>
+                    <p class="new-author">Автор: Nomia</p>
+                </div>
+
+                <div href="" class="news-element" data-type="art">
+                    <a href="" class="new-title">История студии. Manglobe. "От рассвета до заката" часть 2</a>
+                    <div class="new-about">
+                        <div class="new-type article-type">статья</div>
+                        <div class="new-date">
+                            <img src="../img/clock.svg">
+                            <p>23 Апр 2021</p>
+                        </div>
+                    </div>
+                    <p class="new-excerpt">Акт VIII. Начало конца«Страна чудес» со своей жестокостью и визуалом великолепно показала себя как в Америке, так и в Европе. А вот на родине сериал не удостоился даже тысячного тиража на DVD. Ожидаемый исход для студии, которая так
+                        и не смогла определить свою целевую аудиторию. Не помогли даже лест ... </p>
+                    <p class="new-author">Автор: DreamEvil</p>
+                </div>
+
+                <div href="" class="news-element" data-type="site">
+                    <a href="" class="new-title">История студии. Manglobe. "От рассвета до заката" часть 1</a>
+                    <div class="new-about">
+                        <div class="new-type news-site-type">НОВОСТИ САЙТА</div>
+                        <div class="new-date">
+                            <img src="../img/clock.svg">
+                            <p>9 Апр 2021</p>
+                        </div>
+                    </div>
+                    <p class="new-excerpt">История студии. Manglobe ПредисловиеИтак, год, проведенный в творческой изоляции, также именуемой вооруженными силами, не прошел даром. Подобное заныривание в пучину сюрреализма и тупости подтолкнуло к новому творческому порыву. В
+                        этот раз мы поговорим, к сожалению, не очень подробно (ввиду отс ...</p>
+                    <p class="new-author">Автор: DreamEvil</p>
+                </div>
+
+                <div href="" class="news-element" data-type="anime">
+                    <a href="" class="new-title">Новое аниме по вселенной "Повесть о Небесных островах"</a>
+                    <div class="new-about">
+                        <div class="new-type news-anim-type">новости аниме</div>
+                        <div class="new-date">
+                            <img src="../img/clock.svg">
+                            <p>29 Мар 2021</p>
+                        </div>
+                    </div>
+                    <p class="new-excerpt">Официальный сайт, посвященный аниме-адаптации манги "Повесть о Небесных островах" опубликовал тизер будущего аниме по 4-кома манге Guraburu!, посвященной миру "Granblue Fantasy". Выпуск ожидается в 2020 году. Guraburu! выпускается
+                        с 2015 года и в своем составе на данный м ... </p>
+                    <p class="new-author">Автор: Alex_Bes</p>
+                </div>
+
+                <div href="" class="news-element" data-type="anime">
+                    <a href="" class="new-title">Анонсировано продолжение аниме "Волшебник-воин Орфен"</a>
+                    <div class="new-about">
+                        <div class="new-type news-anim-type">новости аниме</div>
+                        <div class="new-date">
+                            <img src="../img/clock.svg">
+                            <p>25 Мар 2021</p>
+                        </div>
+                    </div>
+                    <p class="new-excerpt">В среду 1го апреля официальный сайт аниме "Волшебник-воин Орфен" анонсировал выход второго сезона одноименного аниме. На Youtube также представлена 15-секундная реклама будущего сезона. О чем это аниме: "Волшебник, когда-то известный
+                        как лучший ученик Башни Клыка, сейчас занимается ... </p>
+                    <p class="new-author">Автор: Alex_Bes</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="scrollup"></a>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

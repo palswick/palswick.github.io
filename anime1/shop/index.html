@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин</title>
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header flex-w just-sb align-c">
+        <a class="header-logo" href="../index.html">
+            <img src="../img/logo.svg">
+        </a>
+        <div class="header-r flex-w align-c">
+            <nav class="header-nav flex-w align-c">
+                <a href="../news/index.html" class="header-item">Новости</a>
+                <a href="" class="header-item">Биография</a>
+                <a href="../shop/index.html" class="header-item">Магазин</a>
+                <a href="../watch/index.html" class="header-item">Смотреть</a>
+                <a href="../contacts/index.html" class="header-item">Контакты</a>
+            </nav>
+            <div class="profile">
+                <img src="../img/profile.svg" class="profile-ava">
+                <img src="../img/arrow-p.svg" class="profile-arrow">
+            </div>
+        </div>
+        <div class="header-menu" onClick="openMenu()">
+            <img src="../img/menu.svg">
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="cont">
+            <h1 class="shop-title">Товары</h1>
+        </div>
+        <section class="shop-box">
+            <div class="cont">
+                <div class="shop-item">
+                    <a class="shop-item__img" href="">
+                        <img src="../img/item-1.png">
+                    </a>
+                    <a href="" class="shop-item__title">My Neighbor Totoro — Plush Large Totoro leaf ver.</a>
+                    <p class="shop-item__price">29.90 руб.</p>
+                    <a class="shop-item__cart" href="./index.html">
+                        В КОРЗИНУ<br>
+                        <img src="../img/cart.png">
+                    </a>
+                </div>
+
+                <div class="shop-item">
+                    <a class="shop-item__img" href="">
+                        <img src="../img/item-2.png">
+                    </a>
+                    <a href="" class="shop-item__title">My Neighbor Totoro — Plush Middle Totoro S</a>
+                    <p class="shop-item__price">29.90 руб.</p>
+                    <a class="shop-item__cart" href="./index.html">
+                        В КОРЗИНУ<br>
+                        <img src="../img/cart.png">
+                    </a>
+                </div>
+
+                <div class="shop-item">
+                    <a class="shop-item__img" href="">
+                        <img src="../img/item-3.png">
+                    </a>
+                    <a href="" class="shop-item__title">My Neighbor Totoro — Plush Large Totoro</a>
+                    <p class="shop-item__price">29.90 руб.</p>
+                    <a class="shop-item__cart" href="./index.html">
+                        В КОРЗИНУ<br>
+                        <img src="../img/cart.png">
+                    </a>
+                </div>
+
+                <div class="shop-item">
+                    <a class="shop-item__img" href="">
+                        <img src="../img/item-4.png">
+                    </a>
+                    <a href="" class="shop-item__title">My Neighbor Totoro — Carabiner Pouch Nekobus</a>
+                    <p class="shop-item__price">39.90 руб.</p>
+                    <a class="shop-item__cart" href="./index.html">
+                        В КОРЗИНУ<br>
+                        <img src="../img/cart.png">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

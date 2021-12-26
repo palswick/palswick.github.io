@@ -1,0 +1,145 @@
+/* main */
+
+.main {
+    background-image: url('../../img/bg.svg');
+    min-height: 100vh;
+    background-size: 100vw;
+    overflow: hidden;
+}
+
+.header-item:nth-child(3){
+    text-decoration: underline;
+}
+
+.header-item:hover{
+    text-decoration: underline;
+}
+
+.cont {
+    width: 1082px;
+}
+
+.shop-title {
+    margin: 76px 0 29px;
+    font-size: 40px;
+    line-height: 47px;
+    background-color: rgba(255, 255, 255, 0.85);
+    width: 150px;
+}
+
+.shop-box {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 34px 0 84px;
+}
+
+.shop-box .cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-item {
+    position: relative;
+    width: 200px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-bottom: 12px;
+    z-index: 1;
+}
+
+.shop-item__img {
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+.shop-item__img img {
+    width: 100%;
+}
+
+.shop-item__title {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    margin: 15px 0 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+}
+
+.shop-item__price {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+}
+
+.shop-item__cart {
+    background: url('../../img/cart.svg');
+    width: 130px;
+    height: 49px;
+    background-size: cover;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 6px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1290px) {
+    .cont {
+        width: 90%;
+    }
+    .shop-item__img {
+        height: auto;
+    }
+    .shop-item {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .shop-title {
+        margin: 13px 0 9px;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+    }
+    .shop-item__cart {
+        display: none;
+    }
+    .shop-box .cont {
+        flex-wrap: wrap;
+    }
+    .shop-item {
+        width: 38.5%;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+        margin-bottom: 20px
+    }
+    .shop-item:nth-last-child(-n+2){
+        margin-bottom: 0;
+    }
+    .shop-box .cont {
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    .shop-item__title {
+        font-size: 8px;
+        line-height: 9px;
+        margin: 0 0 4px 0;
+    }
+    .shop-item__price {
+        font-size: 8px;
+        line-height: 9px;
+    }
+    .shop-box{
+        padding: 37px 0 20px;
+    }
+}

@@ -1,0 +1,116 @@
+main {
+    min-height: 150vh;
+}
+
+.header-item:last-child{
+    text-decoration: underline;
+}
+
+.header-item:hover{
+    text-decoration: underline;
+}
+
+.contacts-top {
+    margin: 31px 0 35px;
+}
+
+.contacts-top .cont {
+    background-color: #E8EBEF;
+    box-sizing: border-box;
+    padding: 43px 189px 19px 0px;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.contacts-title {
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 38px;
+}
+
+.contacts-top p {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.contacts-top p span {
+    font-weight: normal;
+}
+
+.map {
+    height: 555px;
+}
+
+.form-sec {
+    margin-bottom: 30px;
+}
+
+.form-sec h2 {
+    font-size: 22px;
+    margin: 18px 0;
+}
+
+.form-sec form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-sec input {
+    height: 40px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    width: 65%;
+}
+
+.form-sec button {
+    width: 30%;
+    height: 40px;
+    padding: 0;
+}
+
+.scrollup{
+    width:140px;
+    height:140px;
+    position:fixed;
+    bottom:50px;
+    right:0px;
+    display:none;
+    background: url(/icon_top.png) no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+    main {
+        min-height: 0;
+    }
+    .contacts-title {
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .contacts-top {
+        margin-bottom: 0;
+    }
+    .contacts-top .cont {
+        background-color: transparent;
+        padding: 0;
+        width: 100%;
+    }
+    .contacts-top div {
+        padding: 15px 18px;
+        background-color: rgba(232, 235, 239, 0.85);
+    }
+    .contacts-top p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .map {
+        height: 136px;
+    }
+    .map .cont {
+        width: 100%;
+    }
+    .form-sec h2 {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+         
+        $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+        $('.scrollup').fadeIn();
+        } else {
+        $('.scrollup').fadeOut();
+        }
+        });
+         
+        $('.scrollup').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+        });
+         
+        });
+        </script>
+</head>
+
+<body>
+    <header class="header flex-w just-sb align-c">
+        <a class="header-logo" href="../index.html">
+            <img src="../img/logo.svg">
+        </a>
+        <div class="header-r flex-w align-c">
+            <nav class="header-nav flex-w align-c">
+                <a href="../news/index.html" class="header-item">Новости</a>
+                <a href="" class="header-item">Биография</a>
+                <a href="../shop/index.html" class="header-item">Магазин</a>
+                <a href="../watch/index.html" class="header-item">Смотреть</a>
+                <a href="../contacts/index.html" class="header-item">Контакты</a>
+            </nav>
+            <div class="profile">
+                <img src="../img/profile.svg" class="profile-ava">
+                <img src="../img/arrow-p.svg" class="profile-arrow">
+            </div>
+        </div>
+        <div class="header-menu" onClick="openMenu()">
+            <img src="../img/menu.svg">
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="contacts-top">
+            <div class="cont">
+                <h1 class="contacts-title">Аниме-товары в Минске</h1>
+                <div>
+                    <p>Наш магазин находится по адресу <span>ул. Академика Курчатова 8А в общежитии №10 БГУ</span>. Попасть к нам можно на автобусах №47с, №96 и №132, либо дойти за 20 минут от <span>станции метро “Малиновка”</span>.
+                        <br><br> Если потеряетесь, то звоните нам:<br> +375298500560 (МТС)<br> +375447899943 (А1)</p>
+                    <br><br>
+                    <p><span>Режим работы:</span><br> понедельник — пятница: 6:00 — 00:00<br> суббота: 14:00 — 00:00<br> воскресенье: выходной</p>
+                    <br><br>
+                    <p>Также вы можете связаться с нами в любое удобное время через почту:<br> <span>hayaofansss@gmail.com</span>. Наши менеджеры ответят вам в течение 15 минут.</p>
+                </div>
+            </div>
+        </section>
+        <section class="form-sec">
+            <div class="cont">
+                <h2>Подпишитесь на нашу рассылку!</h2>
+                <form>
+                    <input type="text" placeholder="Введите свой email..." class="inputForm">
+                    <button type="button" onclick="sendFunc()">Подписаться</button>
+                </form>
+            </div>
+        </section>
+        <section class="map">
+            <div class="cont">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9b4767a56702a3a34bbf1092c815c4994542ff847c421b52dd567feebf7ba96c&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+            <a href="#" class="scrollup"></a>
+        </section>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

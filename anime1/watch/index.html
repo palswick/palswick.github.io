@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Смотреть</title>
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+         
+        $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+        $('.scrollup').fadeIn();
+        } else {
+        $('.scrollup').fadeOut();
+        }
+        });
+         
+        $('.scrollup').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+        });
+         
+        });
+        </script>
+</head>
+
+<body>
+    <header class="header flex-w just-sb align-c">
+        <a class="header-logo" href="../index.html">
+            <img src="../img/logo.svg">
+        </a>
+        <div class="header-r flex-w align-c">
+            <nav class="header-nav flex-w align-c">
+                <a href="../news/index.html" class="header-item">Новости</a>
+                <a href="" class="header-item">Биография</a>
+                <a href="../shop/index.html" class="header-item">Магазин</a>
+                <a href="../watch/index.html" class="header-item">Смотреть</a>
+                <a href="../contacts/index.html" class="header-item">Контакты</a>
+            </nav>
+            <div class="profile">
+                <img src="../img/profile.svg" class="profile-ava">
+                <img src="../img/arrow-p.svg" class="profile-arrow">
+            </div>
+        </div>
+        <div class="header-menu" onClick="openMenu()">
+            <img src="../img/menu.svg">
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="cont">
+            <h1 class="watch-title">Аниме от Studio Ghibli</h1>
+            <p class="watch-text">На данной странице отображены аниме студии studio ghibli, отсортированные по популярности</p>
+            <img src="../img/dots.svg" class="watch-dots" onclick="dotsClick()">
+            <div class="watch-box">
+                <div class="watch-list">
+
+                    <div class="watch-item" data-type="Фильм" data-year="2001">
+                        <a href=""><img src="../img/wathc/1.png" class="watch-item__img"></a>
+                        <h2 class="watch-item__title">Унесённые призраками</h2>
+                        <div class="watch-info">
+                            <p class="watch-item__type">Фильм</p>
+                            <p class="watch-item__year">2001</p>
+                        </div>
+                    </div>
+
+                    <div class="watch-item" data-type="Фильм" data-year="1997">
+                        <a href=""><img src="../img/wathc/2.png" class="watch-item__img"></a>
+                        <h2 class="watch-item__title">Принцесса Мононоке</h2>
+                        <div class="watch-info">
+                            <p class="watch-item__type">Фильм</p>
+                            <p class="watch-item__year">1997</p>
+                        </div>
+                    </div>
+
+                    <div class="watch-item" data-type="Фильм" data-year="2004">
+                        <a href=""><img src="../img/wathc/3.png" class="watch-item__img"></a>
+                        <h2 class="watch-item__title">Ходячий замок</h2>
+                        <div class="watch-info">
+                            <p class="watch-item__type">Фильм</p>
+                            <p class="watch-item__year">2004</p>
+                        </div>
+                    </div>
+
+                    <div class="watch-item" data-type="Фильм" data-year="1988">
+                        <a href=""><img src="../img/wathc/4.png" class="watch-item__img"></a>
+                        <h2 class="watch-item__title">Могила светлячков</h2>
+                        <div class="watch-info">
+                            <p class="watch-item__type">Фильм</p>
+                            <p class="watch-item__year">1988</p>
+                        </div>
+                    </div>
+
+                    <div class="watch-item" data-type="Фильм" data-year="1986">
+                        <a href=""><img src="../img/wathc/5.png" class="watch-item__img"></a>
+                        <h2 class="watch-item__title">Небесный замок Лапута</h2>
+                        <div class="watch-info">
+                            <p class="watch-item__type">Фильм</p>
+                            <p class="watch-item__year">1986</p>
+                        </div>
+                    </div>
+
+                    <div class="watch-item" data-type="Фильм" data-year="1988">
+                        <a href=""><img src="../img/wathc/6.png" class="watch-item__img"></a>
+                        <h2 class="watch-item__title">Мой сосед Тоторо</h2>
+                        <div class="watch-info">
+                            <p class="watch-item__type">Фильм</p>
+                            <p class="watch-item__year">1988</p>
+                        </div>
+                    </div>
+
+                    <div class="watch-item" data-type="Фильм" data-year="1989">
+                        <a href=""><img src="../img/wathc/7.png" class="watch-item__img"></a>
+                        <h2 class="watch-item__title">Ведьмина служба достав...</h2>
+                        <div class="watch-info">
+                            <p class="watch-item__type">Фильм</p>
+                            <p class="watch-item__year">1989</p>
+                        </div>
+                    </div>
+
+                    <div class="watch-item" data-type="Фильм" data-year="1995">
+                        <a href=""><img src="../img/wathc/8.png" class="watch-item__img"></a>
+                        <h2 class="watch-item__title">Шёпот сердца</h2>
+                        <div class="watch-info">
+                            <p class="watch-item__type">Фильм</p>
+                            <p class="watch-item__year">1995</p>
+                        </div>
+                    </div>
+
+                    <div class="watch-item" data-type="Фильм" data-year="2013">
+                        <a href=""><img src="../img/wathc/9.png" class="watch-item__img"></a>
+                        <h2 class="watch-item__title">Сказание о принцессе Ка...</h2>
+                        <div class="watch-info">
+                            <p class="watch-item__type">Фильм</p>
+                            <p class="watch-item__year">2013</p>
+                        </div>
+                    </div>
+
+                    <div class="watch-item" data-type="Фильм" data-year="2013">
+                        <a href=""><img src="../img/wathc/10.png" class="watch-item__img"></a>
+                        <h2 class="watch-item__title">Ветер крепчает</h2>
+                        <div class="watch-info">
+                            <p class="watch-item__type">Фильм</p>
+                            <p class="watch-item__year">2013</p>
+                        </div>
+                    </div>
+
+                    <div class="watch-item" data-type="Фильм" data-year="2014">
+                        <a href=""><img src="../img/wathc/11.png" class="watch-item__img"></a>
+                        <h2 class="watch-item__title">Воспоминания о Марни</h2>
+                        <div class="watch-info">
+                            <p class="watch-item__type">Фильм</p>
+                            <p class="watch-item__year">2014</p>
+                        </div>
+                    </div>
+
+                    <div class="watch-item" data-type="Фильм" data-year="1992">
+                        <a href=""><img src="../img/wathc/12.png" class="watch-item__img"></a>
+                        <h2 class="watch-item__title">Порко Россо</h2>
+                        <div class="watch-info">
+                            <p class="watch-item__type">Фильм</p>
+                            <p class="watch-item__year">1992</p>
+                        </div>
+                    </div>
+
+                    <div class="watch-item" data-type="Фильм" data-year="2010">
+                        <a href=""><img src="../img/wathc/13.png" class="watch-item__img"></a>
+                        <h2 class="watch-item__title">Ариэтти из страны лилли...</h2>
+                        <div class="watch-info">
+                            <p class="watch-item__type">Фильм</p>
+                            <p class="watch-item__year">2010</p>
+                        </div>
+                    </div>
+
+                    <div class="watch-item" data-type="Фильм" data-year="2008">
+                        <a href=""><img src="../img/wathc/14.png" class="watch-item__img"></a>
+                        <h2 class="watch-item__title">Рыбка Поньо на утёсе</h2>
+                        <div class="watch-info">
+                            <p class="watch-item__type">Фильм</p>
+                            <p class="watch-item__year">2008</p>
+                        </div>
+                    </div>
+
+                    <div class="watch-item" data-type="Фильм" data-year="2011">
+                        <a href=""><img src="../img/wathc/15.png" class="watch-item__img"></a>
+                        <h2 class="watch-item__title">Со склонов Кокурико</h2>
+                        <div class="watch-info">
+                            <p class="watch-item__type">Фильм</p>
+                            <p class="watch-item__year">2011</p>
+                        </div>
+                    </div>
+
+                    <div class="watch-item" data-type="Фильм" data-year="2002">
+                        <a href=""><img src="../img/wathc/16.png" class="watch-item__img"></a>
+                        <h2 class="watch-item__title">Возвращение кота</h2>
+                        <div class="watch-info">
+                            <p class="watch-item__type">Фильм</p>
+                            <p class="watch-item__year">2002</p>
+                        </div>
+                    </div>
+
+                    <div class="watch-item" data-type="Клип" data-year="1995">
+                        <a href=""><img src="../img/wathc/17.png" class="watch-item__img"></a>
+                        <h2 class="watch-item__title">На старт!</h2>
+                        <div class="watch-info">
+                            <p class="watch-item__type">Клип</p>
+                            <p class="watch-item__year">1995</p>
+                        </div>
+                    </div>
+
+                    <div class="watch-item" data-type="Фильм" data-year="1991">
+                        <a href=""><img src="../img/wathc/18.png" class="watch-item__img"></a>
+                        <h2 class="watch-item__title">Ещё вчера</h2>
+                        <div class="watch-info">
+                            <p class="watch-item__type">Фильм</p>
+                            <p class="watch-item__year">1991</p>
+                        </div>
+                    </div>
+
+                    <div class="watch-item" data-type="Фильм" data-year="1994">
+                        <a href=""><img src="../img/wathc/19.png" class="watch-item__img"></a>
+                        <h2 class="watch-item__title">Война Тануки в периоды ...</h2>
+                        <div class="watch-info">
+                            <p class="watch-item__type">Фильм</p>
+                            <p class="watch-item__year">1994</p>
+                        </div>
+                    </div>
+
+                    <div class="watch-item" data-type="Спешл" data-year="2002">
+                        <a href=""><img src="../img/wathc/20.png" class="watch-item__img"></a>
+                        <h2 class="watch-item__title">Мэй и Котобусёнок</h2>
+                        <div class="watch-info">
+                            <p class="watch-item__type">Спешл</p>
+                            <p class="watch-item__year">2002</p>
+                        </div>
+                    </div>
+
+                    <div class="watch-item" data-type="Фильм" data-year="1999">
+                        <a href=""><img src="../img/wathc/21.png" class="watch-item__img"></a>
+                        <h2 class="watch-item__title">Наши соседи Ямада</h2>
+                        <div class="watch-info">
+                            <p class="watch-item__type">Фильм</p>
+                            <p class="watch-item__year">1999</p>
+                        </div>
+                    </div>
+
+                    <div class="watch-item" data-type="TV Сериал" data-year="2014">
+                        <a href=""><img src="../img/wathc/22.png" class="watch-item__img"></a>
+                        <h2 class="watch-item__title">Ронья, дочь разбойника</h2>
+                        <div class="watch-info">
+                            <p class="watch-item__type">TV Сериал</p>
+                            <p class="watch-item__year">2014</p>
+                        </div>
+                    </div>
+
+                    <div class="watch-item" data-type="Фильм" data-year="2006">
+                        <a href=""><img src="../img/wathc/23.png" class="watch-item__img"></a>
+                        <h2 class="watch-item__title">День, когда я купил звезду</h2>
+                        <div class="watch-info">
+                            <p class="watch-item__type">Фильм</p>
+                            <p class="watch-item__year">2006</p>
+                        </div>
+                    </div>
+
+                    <div class="watch-item" data-type="OVA" data-year="2007">
+                        <a href=""><img src="../img/wathc/24.png" class="watch-item__img"></a>
+                        <h2 class="watch-item__title">Время Ибларда</h2>
+                        <div class="watch-info">
+                            <p class="watch-item__type">OVA</p>
+                            <p class="watch-item__year">2007</p>
+                        </div>
+                    </div>
+
+                    <div class="watch-item" data-type="Фильм" data-year="2006">
+                        <a href=""><img src="../img/wathc/25.png" class="watch-item__img"></a>
+                        <h2 class="watch-item__title">Сказания Земноморья</h2>
+                        <div class="watch-info">
+                            <p class="watch-item__type">Фильм</p>
+                            <p class="watch-item__year">2006</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="watch-bar">
+                    <form class="search-form">
+                        <input type="text" placeholder="Поиск" class="search-input">
+                        <button class="search-btnv">
+                            <img src="../img/search.png">
+                        </button>
+                    </form>
+                    <div class="watch-bar__el">
+                        <div class="wathc-bar__title">ТИП</div>
+                        <ul class="wathc-bar__list">
+                            <li>
+                                <label class="watch-label">
+                                        <input type="checkbox" value="TV Сериал" class="type-input input-w">
+                                        <span></span>
+                                    </label>
+                                <p class="watch-bar__name">TV Сериал</p>
+                            </li>
+
+                            <li>
+                                <label class="watch-label">
+                                        <input type="checkbox" value="Фильм" class="type-input input-w">
+                                        <span></span>
+                                    </label>
+                                <p class="watch-bar__name">Фильм</p>
+                            </li>
+
+                            <li>
+                                <label class="watch-label">
+                                        <input type="checkbox" value="OVA" class="type-input input-w">
+                                        <span></span>
+                                    </label>
+                                <p class="watch-bar__name">OVA</p>
+                            </li>
+
+                            <li>
+                                <label class="watch-label">
+                                        <input type="checkbox" value="ONA" class="type-input input-w">
+                                        <span></span>
+                                    </label>
+                                <p class="watch-bar__name">ONA</p>
+                            </li>
+
+                            <li>
+                                <label class="watch-label">
+                                        <input type="checkbox" value="Спешл" class="type-input input-w">
+                                        <span></span>
+                                    </label>
+                                <p class="watch-bar__name">Спешл</p>
+                            </li>
+
+                            <li>
+                                <label class="watch-label">
+                                        <input type="checkbox" value="Клип" class="type-input input-w">
+                                        <span></span>
+                                    </label>
+                                <p class="watch-bar__name">Клип</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="watch-bar__el">
+                        <div class="wathc-bar__title">СЕЗОН</div>
+                        <ul class="wathc-bar__list">
+                            <li>
+                                <label class="watch-label">
+                                        <input type="checkbox" value="2021" class="input-w date-input">
+                                        <span></span>
+                                    </label>
+                                <p class="watch-bar__name">2021 год</p>
+                            </li>
+
+                            <li>
+                                <label class="watch-label">
+                                        <input type="checkbox" value="2020" class="input-w date-input">
+                                        <span></span>
+                                    </label>
+                                <p class="watch-bar__name">2020 год</p>
+                            </li>
+
+                            <li>
+                                <label class="watch-label">
+                                        <input type="checkbox" value="2018-2019" class="input-w date-input">
+                                        <span></span>
+                                    </label>
+                                <p class="watch-bar__name">2018-2019</p>
+                            </li>
+
+                            <li>
+                                <label class="watch-label">
+                                        <input type="checkbox" value="2013-2017" class="input-w date-input">
+                                        <span></span>
+                                    </label>
+                                <p class="watch-bar__name">2013-2017</p>
+                            </li>
+
+                            <li>
+                                <label class="watch-label">
+                                        <input type="checkbox" value="2000-2012" class="input-w date-input">
+                                        <span></span>
+                                    </label>
+                                <p class="watch-bar__name">2000-2012</p>
+                            </li>
+
+                            <li>
+                                <label class="watch-label">
+                                        <input type="checkbox" value="1990" class="input-w date-input">
+                                        <span></span>
+                                    </label>
+                                <p class="watch-bar__name">1990е годы</p>
+                            </li>
+
+                            <li>
+                                <label class="watch-label">
+                                        <input type="checkbox" value="1980" class="input-w date-input">
+                                        <span></span>
+                                    </label>
+                                <p class="watch-bar__name">1980е годы</p>
+                            </li>
+
+                            <li>
+                                <label class="watch-label">
+                                        <input type="checkbox" value="Более старые" class="input-w date-input">
+                                        <span></span>
+                                    </label>
+                                <p class="watch-bar__name">Более старые</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <a href="#" class="scrollup"></a>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
